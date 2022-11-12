@@ -1,0 +1,133 @@
+@media (max-width: 1456px){
+nav{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+}
+#ham{
+    width: 35px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    margin: 10px;
+    visibility: visible;
+}
+#ham:hover{
+    cursor: pointer;
+    background-color: red;
+}
+#ham > div{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+ol{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: linear-gradient(to right,transparent,rgb(167, 0, 0));
+    width: 150px;
+    height: 100vh;
+    margin: 0;
+    visibility: hidden;
+}
+.active{
+    background: linear-gradient(to right,transparent,rgb(167, 0, 0));
+}
+}
+@media (max-width: 966px){
+    #o_nas{
+        flex-direction: column;
+        padding: 30px 70px;
+        justify-content: center;
+        position: relative;
+    }
+    #o_nas > div{
+        min-height: 150px;
+        height: 150px;
+        width: 150px;
+    }
+    #o_nas > p{
+        font-size: 2.5em;
+        margin: 0;
+        width: 100%;
+    }
+    #o_nas::before, #o_nas::after{
+        height: 10px;
+    }
+    #o_nas::before{
+        align-self: unset;
+        border-left: none;
+        top: 10px;
+    }
+    #o_nas::after{
+        align-self: unset;
+        border-right: none;
+        bottom: 10px;
+    }
+    
+}
+@media (max-width: 500px){
+    ol, .active {
+        width: 100vw;
+        background: none;
+        background-color: red;
+        align-items: center;
+        font-size: 2em;
+    }
+    /* a:hover{
+        background-color: brown;
+        width: 100vw;
+    } */
+    nav{
+        width: 100vw;
+        align-items: center;
+    }
+    .hide{
+        display: none;
+    }
+    #remulti{
+        width: 100%;
+        position: absolute;
+    }
+    #remulti > h1{
+        font-size: 25px;
+    }
+    #main_logo{
+        width: 100vw;
+    }
+    #main_logo > h2{
+        font-size: 15vw;
+    }
+    #main_logo > .logo{
+        width: 15vw;
+        height: auto;
+    }
+    footer{
+        height: 25vh;
+    }
+}
+@media (max-width: 400px){
+    #o_nas > p{
+        font-size: 2em;
+    }
+}
+@media (max-width: 378px){
+    #o_nas > p{
+        font-size: 1.5em;
+    }
+}
+@media (max-height: 510px){
+    #o_nas > p{
+        font-size: 1.8em;
+    }
+    #o_nas{
+        overflow-y: auto;
+    }
+}
